@@ -1,0 +1,36 @@
+{% load static %}
+<div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidebar-offcanvas">
+            <div class="sidebar-module sidebar-module-inset">
+                <p> <script type="text/javascript" src="{% static 'js/clock_sk.js' %}"></script></p>
+            </div>
+            <div class="sidebar-module mail text-center">
+            {% if user.is_authenticated %}
+                {% else %}
+                <h4 class="text-left">Log in to system<i class="fa fa-at"></i></h4>
+            {% endif %}
+<div class="auth text-right">
+{% if user.is_authenticated %} <a href="/user_profile/{{ user.id }}/">
+    <b> {{ user.get_username }}</b></a>
+    <a href="/logout/">  logout</a><br>
+
+            {% else %}
+   <form action="/login/" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="_task" value="login">
+        <input type="hidden" name="_action" value="login">
+        <input type="hidden" name="_timezone" value="_default_">
+        <input type="hidden" name="_url"  value="">
+
+        <input placeholder="Логін" name="_user"  required="required" size="20" type="text"><br>
+        <input placeholder="Пароль" name="_pass" required="required" size="20" type="password"><br>
+
+        <input value="login" class="btn btn-primary" type="submit">
+    </form>
+    <a href="/register/">Register</a>
+    {% endif %}
+</div>
+
+            </div>
+
+
+        </div>

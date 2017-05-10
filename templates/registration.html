@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Registration</title>{% endblock %}
+{% block content_title %}Registration{% endblock %}
+{% block content %}
+     <form action="register_user/" method="post">
+        {% csrf_token %}
+
+        <input placeholder="Логін" name="_user"  required="required" size="20" type="text"><br>
+        <input placeholder="Email" name="_email"  required="required" size="20" type="text"><br>
+
+        <input placeholder="Ім’я" name="_firstName"  required="required" size="40" type="text"><br>
+        <input placeholder="Прізвище" name="_lastName"  required="required" size="40" type="text"><br>
+
+
+        <input placeholder="Пароль" name="_pass" required="required" size="20" type="password"><br>
+        <input placeholder="Повторіть пароль" name="_pass2" required="required" size="20" type="password"><br>
+
+        <input value="Підтвердити" class="btn btn-primary" type="submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,471 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html body {
+    margin-bottom: 250px;
+    background-color: #ececec;
+}
+
+h1.big {
+    font-size: 48px;
+}
+
+input {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0px none;
+}
+
+input[type=text],
+input[type=password] {
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #000;
+    border: 1px solid #337ab7;
+}
+
+input[type=submit] {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+input[type=submit]:hover {
+    background-color: #23527c;
+}
+
+a.url {
+    color: inherit;
+}
+
+a.url:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+body a, body a:focus {
+    outline: none;
+}
+
+
+/* HEADER */
+
+.navbar-wrapper.header {
+    padding-top: 10px;
+    border-top: 10px solid #ffd800;
+    background-color: #ececec;
+}
+
+.header h1,
+.header h1 a {
+    color: #565656;
+    text-transform: uppercase;
+}
+
+.header h1, .header h4 {
+    font-family: Open Sans;
+}
+
+.header h1 {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+.header h1 a:hover {
+    color: #565656;
+    text-decoration: none;
+}
+
+.header h1 {
+    font-weight: 600;
+    text-indent: -3px;
+}
+
+/* MENU */
+
+.navbar-wrapper.menu, .navbar-wrapper.menu .navbar-inverse {
+    background-color: #337ab7;
+    background-image: none;
+}
+
+.navbar-wrapper.menu .container {
+    line-height: 0;
+}
+
+.navbar-wrapper.menu .navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-wrapper.menu .navbar-inverse .navbar-collapse {
+    background-color: #337ab7;
+    border-color: #ffd800;
+}
+
+.navbar-inverse .navbar-nav li.active a,
+.navbar-inverse .navbar-nav li a.dropdown-toggle,
+.navbar-inverse .navbar-nav li a.main-section {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav li.active a,
+.navbar-inverse .navbar-nav li.active a:hover,
+.navbar-inverse .navbar-nav > .open > a.main-section,
+.navbar-inverse .navbar-nav > .open > a.main-section:hover,
+.navbar-inverse .navbar-nav > .open > a.main-section:focus,
+.menu .navbar-inverse .navbar-nav > .open > a,
+.menu .navbar-inverse .navbar-nav > .open > a:focus,
+.menu .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #337ab7;
+    text-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: #ffd800;
+}
+
+.navbar-wrapper.menu .navbar .nav li a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-wrapper.menu .navbar {
+    border-bottom: none;
+}
+
+.menu ul .dropdown-menu {
+    border-top: 10px solid #ffd800;
+    background-color: #337ab7;
+}
+
+.menu ul .dropdown-menu li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.menu ul .dropdown-menu li a:hover {
+    text-decoration: underline;
+    background-color: #337ab7;
+    background-image: none;
+}
+
+.menu ul .dropdown-menu li a.title-menu {
+    color: #ffd800;
+    font-weight: 600;
+}
+
+.menu .navbar-inverse .navbar-toggle {
+    border-color: #ffd800;
+}
+
+.menu .navbar-inverse .navbar-toggle:hover,
+.menu .navbar-inverse .navbar-toggle:focus {
+    background-color: #ffd800;
+}
+
+/* LANG */
+
+ul.lang {
+    margin-top: 9px;
+    display: inline-block;
+    float: right;
+    border: 1px solid #ffd800;
+}
+
+ul.lang li {
+    float: left;
+}
+
+ul.lang li a {
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+ul.lang li a:hover {
+    color: #337ab7;
+    background-color: #ffd800;
+}
+
+ul.lang li.active a {
+    color: #337ab7;
+    background-color: #ffd800;
+}
+
+/* SLIDESHOW */
+
+.jumbotron.pageheader {
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: normal;
+    background-color: #337ab7;
+}
+
+.jumbotron.pageheader h1 {
+    font-size: 36px;
+}
+
+.jumbotron.pageheader p {
+    font-size: 18px;
+}
+
+.carousel-inner > .item {
+    height: 350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+.pageheader .carousel-inner .item .carousel-caption {
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 25%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-wrapper.pageheader p {
+    line-height: normal;
+}
+
+/* CONTENT */
+
+#sidebar .panel,
+#sidebar .list-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+}
+
+.top-resources {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.top-resources .blog-post header h1,
+.top-resources .blog-post header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#sidebar i.fa,
+#sidebar span.fa {
+    width: 14px;
+    float: right;
+    color: #ffd800;
+}
+
+#sidebar .nz i.fa,
+#sidebar .nz span.fa {
+    color: inherit;
+}
+
+#sidebar .list-group-item.active {
+    color: #ffd800;
+}
+
+#sidebar .table {
+    margin-bottom: 0;
+}
+
+#sidebar .table > tbody > tr > td {
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    border-top: 0;
+}
+
+.mail {
+    border: 2px solid #337ab7;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.mail input {
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.mail .auth {
+    display: inline-block;
+}
+
+.mail p.domen-email {
+    color: #337ab7;
+}
+
+.feedback input {
+    border-radius: 2px;
+}
+
+#sidebar .list-group-item:first-child,
+#sidebar .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.counters .panel-heading,
+.link .panel-heading {
+    border-radius: 3px;
+}
+
+.panel.counters,
+.panel.link {
+    background-color: transparent;
+}
+
+.panel-primary.counters,
+.panel-primary.link {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.blog-post {
+    font-family: Open Sans, Arial, Tahoma, Verdana;
+}
+
+.blog-post h4 {
+    margin-top: 20px;
+    font-family: Arial, Tahoma, Verdana;
+}
+
+.poll-statistic-table tr td {
+    padding: 5px 3px;
+}
+
+
+/* SOCIAL */
+
+.ya-share2 {
+}
+
+.ya-share2__item_service_facebook .ya-share2__badge,
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #ffd800;
+    border-radius: 50%;
+    background-color: rgba(65, 65, 65, 0.75);
+}
+
+/* FOOTER */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+#footer .container {
+    background-color: #337ab7;
+}
+
+#footer .copy {
+    margin-top: 30px
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer input[type=text] {
+    width: 75%;
+    border: 0;
+}
+
+#footer input[type=submit] {
+    background-color: #ffd800;
+}
+
+#footer input[type=submit]:hover {
+    background-color: #ffc400;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+    .menu .navbar-toggle {
+        margin-right: 0;
+        float: none;
+    }
+
+    .menu ul.lang {
+        float: none;
+    }
+
+    .menu.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        white-space: normal;
+    }
+
+    .container.main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .main .blog-main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .text-center-xs {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .navbar-wrapper.header .container {
+        background: url(/static/images/vinnitsa-arka.png) 98% 100% no-repeat;
+    }
+}
+
+label.control-label.required:after {
+    content: "*";
+    color: red;
+    padding-left: 4px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+
+/*My*/
+.bookmark_item
+{
+    /*background-color: #807e16;*/
+    size: 50px;
+    font-size: 20px;
+}
+.block_title_favourites {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .title {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 40px;
+      background-repeat:no-repeat;
+      background-position:50%;
+    }
+
+    .favourites_no{
+      background-image: url(/static/images/star32white.png);
+    }
+    .favourites_yes{
+      background-image: url(/static/images/star32yellow.png);
+    }
+    .settings_button{
+      background-image: url(/static/images/settings32.png);
+    }

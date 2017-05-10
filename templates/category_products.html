@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Products</title>{% endblock %}
+{% block content_title %}Category_product_list{% endblock %}
+{% block content %}
+    <table width="100%" border="1">
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Slug</th>
+    <th>Description</th>
+        {% for cat in cat_info_list %}
+            <tr>
+                <td>{{ cat.id }}</td>
+                <td><a href="/product/{{ category }}/{{ cat.slug }}/"> {{ cat.name }}</a></td>
+                <td>{{ cat.price }}</td>
+                <td>{{ cat.slug }}</td>
+                <td>{{ cat.description }}</td>
+            </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Products</title>{% endblock %}
+{% block content_title %}Product_list{% endblock %}
+{% block content %}
+    {% ifnotequal message '' %}
+    {{ message }}
+    {% else %}
+    <table width="100%" border="1">
+    <th>#</th>
+    <th>Name</th>
+    <th>Slug</th>
+    <th>Description</th>
+        {% for cat in cat_list %}
+            <tr>
+                <td>{{ cat.id }}</td>
+                <td><a href="/product/{{ cat.slug }}/"> {{ cat.name }}</a></td>
+                <td>{{ cat.slug }}</td>
+                <td>{{ cat.description }}</td>
+            </tr>
+    {% endfor %}
+    </table>
+{% endifnotequal %}
+{% endblock %}
